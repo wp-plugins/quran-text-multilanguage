@@ -2,7 +2,7 @@
 /*
 Plugin Name: Quran Text Multilanguage
 Description: Quran Text Multilanguage translated into French, English, German and Russian.You can change the background color and text color
-Version: 1.0
+Version: 1.1
 Author: Karim Bahmed
 Author URI: http://islamaudio.fr
 */
