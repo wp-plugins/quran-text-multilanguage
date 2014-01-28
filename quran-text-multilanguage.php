@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
 Plugin Name: Quran Text Multilanguage
 Description: Quran Text Multilanguage translated into French, English, German and Russian.You can change the background color and text color
@@ -200,6 +200,27 @@ else {$sura = 1;}
 ?>
 
 <div id="quran_main">
+<script>
+jQuery(function(){
+
+jQuery(".aya1").on('submit',
+  function(d){
+
+d.preventDefault();
+	var sourate = 'sourate='+jQuery("#sourate").val();
+ var host = window.location.href.replace(/(&?sourate=.+[^&])/, '');
+	var q = (host.indexOf('?') != -1) ? '&' : '?';
+	var href = host + q + sourate;
+
+   window.location.replace(href);
+
+  }
+ );
+jQuery('#btnBismilah').click(function(){
+jQuery('.aya1').trigger('submit');
+ });
+});
+</script>
 <style>
 	#btnBismilah{background:#<?php if(!get_option('background_quran_trans')) {echo "EFF0F0";}else{echo get_option('background_quran_trans');} ?>;color:#<?php if(!get_option('text_quran_trans')){echo "000";}else { echo get_option('text_quran_trans');} ?>;width:auto;height:37px;font-size:17px;}
 	#btnBismilah:hover{background:#fff;color:#4EA8D4;}	
@@ -221,7 +242,7 @@ else {$sura = 1;}
 	</style>
 <form  class="aya1" method="get">
 
-<select name="sourate" class="aya2">
+<select name="sourate" id="sourate" class="aya2">
 
 <?php
 	foreach ( $req_sourate as $sourate ) 
@@ -236,7 +257,7 @@ $sourate->nom = ltrim($sourate->nom, "0");
 	}
 ?>
 </select>
-<input type="submit" class="btn" id="btnBismilah" value="Bismilah">
+<a href="#" class="btn" id="btnBismilah">Bismilah&nbsp;</a>
 </form>
 <?php
 
