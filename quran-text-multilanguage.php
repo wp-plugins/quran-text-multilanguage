@@ -163,9 +163,34 @@ require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 dbDelta( $sql );
 
 }
+
+function quran_uninstall(){
+
+	// delete options
+	delete_option('quran_languages');
+	delete_option('text_quran_title');
+	delete_option('background_quran_title');
+	delete_option('verse_quran_number');
+	delete_option('text_quran_trans');
+	delete_option('background_quran_trans');
+	delete_option('text_quran_arabic');
+	delete_option('background_quran_arabic');	
+	// delete transients
+	delete_transient('quran-options');
+	 
+	// delete custom tables
+	global $wpdb;
+	$table_name = 'quran';
+	$wpdb->query("DROP TABLE IF EXISTS {$table_name}");
+
+}
+
+
 //ACTIVATION PLUGIN INSTALL
 register_activation_hook(__FILE__,'quran_install'); 
 
+//DELETE PLUGIN
+register_uninstall_hook(__FILE__, 'quran_uninstall'); 
 
 //SCRIPTS DU PLUGIN
 function quran_scripts(){
@@ -221,6 +246,7 @@ jQuery('.aya1').trigger('submit');
  });
 });
 </script>
+
 <style>
 	#btnBismilah{background:#<?php if(!get_option('background_quran_trans')) {echo "EFF0F0";}else{echo get_option('background_quran_trans');} ?>;color:#<?php if(!get_option('text_quran_trans')){echo "000";}else { echo get_option('text_quran_trans');} ?>;width:auto;height:37px;font-size:17px;}
 	#btnBismilah:hover{background:#fff;color:#4EA8D4;}	
