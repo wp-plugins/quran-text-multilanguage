@@ -1,4 +1,4 @@
-=== Quran Text Plugin  ===
+ï»¿=== Quran Text Plugin  ===
 Contributors: Karim Bahmed
 Donate link: http://islamaudio.fr
 Tags: quran, coran , coran en texte, quran text, quran translate
@@ -11,14 +11,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
 
 Quran Text Plugin full translated into French, English, German and Russian .
-islam catégory
+islam catÃ©gory
 You can change the background color and text color in your administration setting.
 
 You just have to write the shortcode [quran] on your new page.
-Vous devez juste écrire le shortcode [quran] sur votre nouvelle page.
+Vous devez juste Ã©crire le shortcode [quran] sur votre nouvelle page.
 
 you can set the theme colors of the Quran by going to setting in the administration.
-vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting dans l'administration.
+vous pouvez paramÃ©trer les couleurs du thÃ¨me du Coran en allant dans setting dans l'administration.
 
 
 == Installation ==
