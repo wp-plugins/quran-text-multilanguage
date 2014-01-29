@@ -162,6 +162,15 @@ INSERT INTO `quran` (`id`, `nom`, `nom_id`, `url`) VALUES
 require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 dbDelta( $sql );
 
+//DEFAUT OPTIONS COLORS
+add_option( 'quran_languages', 'english', '', 'yes' );
+add_option( 'text_quran_title', '000000', '', 'yes' );
+add_option( 'background_quran_title', 'english', '', 'yes' );
+add_option( 'verse_quran_number', 'english', '', 'yes' );
+add_option( 'text_quran_trans', '000000', '', 'yes' );
+add_option( 'background_quran_trans', 'FFFFFF', '', 'yes' );
+add_option( 'text_quran_arabic', '000000', '', 'yes' );
+add_option( 'background_quran_arabic', 'EFF0F0', '', 'yes' );
 }
 
 function quran_uninstall(){
@@ -248,14 +257,14 @@ jQuery('.aya1').trigger('submit');
 </script>
 
 <style>
-	#btnBismilah{background:#<?php if(!get_option('background_quran_trans')) {echo "EFF0F0";}else{echo get_option('background_quran_trans');} ?>;color:#<?php if(!get_option('text_quran_trans')){echo "000";}else { echo get_option('text_quran_trans');} ?>;width:auto;height:37px;font-size:17px;}
+	#btnBismilah{background:#<?php echo get_option('background_quran_trans'); ?>;color:#<?php  echo get_option('text_quran_trans'); ?>;width:auto;height:37px;font-size:17px;}
 	#btnBismilah:hover{background:#fff;color:#4EA8D4;}	
 	.suraName {border-bottom: 1px solid #<?php echo get_option('background_quran_title'); ?>;text-align: center; font-size: 20px; padding: 10px 0px; background-color: #<?php echo get_option('background_quran_title'); ?>; margin-top: 7px;color:#<?php echo get_option('text_quran_title'); ?>;}
 	.aya {margin:auto;background-color: #fff; border: 1px solid #fff; border-top: 0px;}
 	.aya2 {padding-top:5px;margin-left:20px;background-color: #fff; color:grey;height:40px;font-size:22px;}
 	.aya1 {width:700px;margin:auto;margin-top:20px;}	
-	.quran { font-family: Traditional Arabic;color:#<?php if(!get_option('text_quran_arabic')){echo "000";}else {echo get_option('text_quran_arabic');} ?>;border-right: 1px solid #<?php echo get_option('background_quran_arabic'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_arabic'); ?>; font-size: 28px; direction: rtl;background-color:#<?php if(!get_option('background_quran_arabic')){echo "EFF0F0";}else{ echo get_option('background_quran_arabic');} ?>}
-	.trans { font-family: Calibri;text-align:justify;border-right: 1px solid #<?php if(!get_option('background_quran_trans')){echo "C4E9FF";}else{echo get_option('background_quran_trans');} ?>;border-left: 1px solid #<?php if(!get_option('background_quran_trans')){echo "C4E9FF";} else{echo get_option('background_quran_trans');} ?>;border-bottom: 1px solid #<?php if(!get_option('background_quran_trans')){echo "C4E9FF";}else {echo get_option('background_quran_trans');} ?>;border-top: 1px solid #<?php if(!get_option('background_quran_trans')){echo "C4E9FF";}else{echo get_option('background_quran_trans');} ?>; color:#<?php if(!get_option('text_quran_trans')){echo "000";}else{echo get_option('text_quran_trans'); }?>;font-size: 20px; direction: ltr; background-color: #<?php echo get_option('background_quran_trans'); ?>;}
+	.quran { font-family: Traditional Arabic;color:#<?php echo get_option('text_quran_arabic'); ?>;border-right: 1px solid #<?php echo get_option('background_quran_arabic'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_arabic'); ?>; font-size: 28px; direction: rtl;background-color:#<?php  echo get_option('background_quran_arabic');?>}
+	.trans { font-family: Calibri;text-align:justify;border-right: 1px solid #<?php echo get_option('background_quran_trans'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_trans'); ?>;border-bottom: 1px solid #<?php echo get_option('background_quran_trans');?>;border-top: 1px solid #<?php echo get_option('background_quran_trans'); ?>; color:#<?php echo get_option('text_quran_trans'); ?>;font-size: 20px; direction: ltr; background-color: #<?php echo get_option('background_quran_trans'); ?>;}
 	.tabSura{margin-top:20px;position:relative;width:100%;}
 	.ayaNum{color:#<?php echo get_option('verse_quran_number'); ?>;}
 	.quran, .trans {padding: 10px; text-align: right;}
@@ -332,8 +341,7 @@ $sourate->nom = ltrim($sourate->nom, "0");
 	{
 		global $quranFile, $transFile, $language;
 		$quranFile =  plugins_url( '/quran/arabe.txt' , __FILE__ );
-		if(!get_option('quran_languages')){$transFile = plugins_url( '/quran/english.txt' , __FILE__ );}
-	    else{$transFile = plugins_url( '/quran/'.get_option('quran_languages').'.txt' , __FILE__ );}
+	    $transFile = plugins_url( '/quran/'.get_option('quran_languages').'.txt' , __FILE__ );
 		$suraName = getSuraData($sura, 'tname');
 		$suraText = getSuraContents($sura, $quranFile);
 		$transText = getSuraContents($sura, $transFile);
