@@ -32,3 +32,20 @@ vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting d
 1. setting quran plugin http://img15.hostingpics.net/pics/951923setting.png
 2. setting admin http://img15.hostingpics.net/pics/710361quranadmin.png
 3. exemple page quran http://img4.hostingpics.net/pics/715760demoquran.png
+
+== Changelog ==
+
+= 1.0 =
+* initial plugin
+
+= 1.1.0 = 
+* fix url change sura
+
+= 1.1.1 =
+* fix change css option
+
+= 1.1.2 =
+* add option admin
+
+= 1.1.3 =
+* add defaut options (languages, color)
