@@ -1,7 +1,7 @@
 ﻿=== Quran Text Plugin  ===
 Contributors: Karim Bahmed
 Donate link: http://islamaudio.fr
-Tags: quran, coran , texte, text, translate, muslim, islam, traduit
+Tags: coran, coran en texte, islam, muslim, quran, quran text, quran translate
 Requires at least: 3.0.1
 Tested up to: 3.8.1
 Stable tag: 4.3
