@@ -1,8 +1,8 @@
-﻿<?php
+<?php
 /*
 Plugin Name: Quran Text Multilanguage
-Description: Quran Text Multilanguage translated into French, English, German and Russian.You can change the background color and text color
-Version: 1.1.3
+Description: Quran Text Multilanguage translated into French, English, German and Russian.You can change the background color and text color.audio of each verse is added, you can choose the reciter in the administration of the plugin.To listen to audio, just click the number of the verse.
+Version: 1.1.4
 Author: Karim Bahmed
 Author URI: http://islamaudio.fr
 */
@@ -16,6 +16,7 @@ add_action('admin_menu','quran_menu');
 
 function register_options() {
 //register our settings
+	register_setting( 'quran-options', 'quran_recitator');
 	register_setting( 'quran-options', 'quran_languages' );
 	register_setting( 'quran-options', 'text_quran_title' );	
 	register_setting( 'quran-options', 'background_quran_title' );	
@@ -171,11 +172,13 @@ add_option( 'text_quran_trans', '000000', '', 'yes' );
 add_option( 'background_quran_trans', 'FFFFFF', '', 'yes' );
 add_option( 'text_quran_arabic', '000000', '', 'yes' );
 add_option( 'background_quran_arabic', 'EFF0F0', '', 'yes' );
+add_option('quran_recitator', 'Maher_al_me-aqly', '', 'yes');
 }
 
 function quran_uninstall(){
 
 	// delete options
+	delete_option('quran_recitator');	
 	delete_option('quran_languages');
 	delete_option('text_quran_title');
 	delete_option('background_quran_title');
@@ -204,8 +207,13 @@ register_uninstall_hook(__FILE__, 'quran_uninstall');
 //SCRIPTS DU PLUGIN
 function quran_scripts(){
     wp_register_script('quran_admin_color',plugin_dir_url( __FILE__ ).'js/jscolor/jscolor.js');	
-    wp_enqueue_script('quran_script');
+	wp_register_script('quran_soundmanager',plugin_dir_url( __FILE__ ).'js/soundmanager.js');	
+    wp_register_script('quran_player',plugin_dir_url( __FILE__ ).'js/player.js');		
+    wp_register_style('quran_player_css',plugin_dir_url( __FILE__ ).'css/player.css');			
     wp_enqueue_script('quran_admin_color');
+	wp_enqueue_script('quran_soundmanager');	
+    wp_enqueue_script('quran_player');	
+    wp_enqueue_style('quran_player_css');		
 }
 add_action('wp_enqueue_scripts','quran_scripts'); 
 global $language;
@@ -216,10 +224,13 @@ function rendu_quran(){
 if(isset($_GET['sourate'])){
 
 $urlSura = $_GET['sourate'];
+
 $sura = explode('_', $urlSura);
+$name_sura = $sura[0];
 $sura = $sura[1];
 $urlSelect = $sura[0];
 $_SESSION['sourate'] = $sura;
+$_SESSION['name_sura'] = $name_sura;
 
 }
 else {$sura = 1;}
@@ -284,14 +295,16 @@ jQuery('.aya1').trigger('submit');
 	{
 $sourate->nom = ltrim($sourate->nom, "0");
 		echo '<option value="'.$sourate->url.'_'.$sourate->nom_id.'"';
-	if($_SESSION['sourate'] == $sourate->nom_id){echo ' selected="selected">';}	
+	if($_SESSION['sourate'] == $sourate->nom_id){ echo ' selected="selected">';}	
 	else{
 	
 	echo '>';}	
 		echo ''.ucwords(strtolower($sourate->nom)).'</option>';
 	}
+	
 ?>
 </select>
+<input type="hidden" class="aya3" name="numero" value="<?php echo $sourate->nom_id;?>" >
 <a href="#" class="btn" id="btnBismilah">Bismilah&nbsp;</a>
 </form>
 <?php
@@ -367,6 +380,15 @@ $sourate->nom = ltrim($sourate->nom, "0");
 	}
 echo "<div class='tabSura'>";
 showSura($sura);
+?>
+<script type="text/javascript">
+jQuery('span.ayaNum, .sm2_link').replaceWith(function(){
+var sura = '<?php echo $_SESSION['sourate'] ?>';
+return "<a class='sm2_link' href='http://www.islamaudio.fr/verset/<?=get_option('quran_recitator');?>/" +sura+ "/"+jQuery(this).html().match(/[0-9]+/)+".mp3'><span class='quranbadge quranbadge-info'>  "+jQuery(this).html().match(/[0-9]+/)+" </span></a>";
+});
+
+</script>
+<?php
 echo "</div></div>";
 		
 }

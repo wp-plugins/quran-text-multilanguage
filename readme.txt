@@ -1,7 +1,7 @@
 ﻿=== Quran Text Plugin  ===
 Contributors: Karim Bahmed
 Donate link: http://islamaudio.fr
-Tags: coran, coran en texte, islam, muslim, quran, quran text, quran translate
+Tags: quran, coran , coran en texte, quran text, quran translate, islam, muslim, audio verse, quran verse, coran verset, audio verset
 Requires at least: 3.0.1
 Tested up to: 3.8.1
 Stable tag: 4.3
@@ -49,3 +49,6 @@ vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting d
 
 = 1.1.3 =
 * add defaut options (languages, color)
+
+= 1.1.4 =
+add audio for all verse with multi recitator

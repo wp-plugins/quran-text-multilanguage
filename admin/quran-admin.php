@@ -6,13 +6,26 @@
 
 </style>
 <div class="wrap">
-<h3>Quran Text Multilanguage Options Colors</h3>
+<h3>Quran Text Multilanguage Options</h3>
 </div> 
 <form method="post" action="options.php">
 
 <?php settings_fields( 'quran-options' ); ?>
 
 <table class="form-table">
+
+<tr valign="top">
+
+<th scope="row">Choose recitator</th>
+
+
+<td>Maher Al Me-aqly <input type="radio" name="quran_recitator" value="Maher_al_me-aqly" <?php if (get_option('quran_recitator') == "Maher_al_me-aqly") {echo "checked";} ?> />
+Saad El Galmidi <input type="radio" name="quran_recitator" value="ElGhamidi" <?php if (get_option('quran_recitator') == "ElGhamidi") {echo "checked";}?> />
+Abderrahman Al Soudais <input type="radio" name="quran_recitator" value="Soudais" <?php if (get_option('quran_recitator') == "Soudais") {echo "checked";}?> />
+Abdallah Ali Basfar <input type="radio" name="quran_recitator" value="Alafasy" <?php if (get_option('quran_recitator') == "Alafasy") {echo "checked";}?> />
+</td>
+
+</tr>
 
 <tr valign="top">
 
