@@ -268,7 +268,7 @@ jQuery('.aya1').trigger('submit');
 	#btnBismilah:hover{background:#fff;color:#4EA8D4;}	
 	.suraName {border-bottom: 1px solid #<?php echo get_option('background_quran_title'); ?>;text-align: center; font-size: 20px; padding: 10px 0px; background-color: #<?php echo get_option('background_quran_title'); ?>; margin-top: 7px;color:#<?php echo get_option('text_quran_title'); ?>;}
 	.aya {margin:auto;background-color: #fff; border: 1px solid #fff; border-top: 0px;}
-	.aya2 {padding-top:5px;margin-left:20px;background-color: #fff; color:grey;height:40px;font-size:22px;}
+	.aya2 {padding-top:5px;margin-left:20px;background-color: #fff; color:grey;height:40px;width:80%;font-size:22px;}
 	.aya1 {width:auto;margin:auto;margin-top:20px;}	
 	.quran { font-family: Traditional Arabic;color:#<?php echo get_option('text_quran_arabic'); ?>;border-right: 1px solid #<?php echo get_option('background_quran_arabic'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_arabic'); ?>; font-size: 28px; direction: rtl;background-color:#<?php  echo get_option('background_quran_arabic');?>}
 	.trans { font-family: Calibri;text-align:justify;border-right: 1px solid #<?php echo get_option('background_quran_trans'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_trans'); ?>;border-bottom: 1px solid #<?php echo get_option('background_quran_trans');?>;border-top: 1px solid #<?php echo get_option('background_quran_trans'); ?>; color:#<?php echo get_option('text_quran_trans'); ?>;font-size: 20px; direction: ltr; background-color: #<?php echo get_option('background_quran_trans'); ?>;}
