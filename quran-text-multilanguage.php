@@ -2,7 +2,7 @@
 /*
 Plugin Name: Quran Multilanguage Text Audio Verse
 Description: Quran Text Multilanguage translated into French, English, German and Russian.You can change the background color and text color.audio of each verse is added, you can choose the reciter in the administration of the plugin.To listen to audio, just click the number of the verse.
-Version: 1.1.4
+Version: 1.1.5
 Author: Karim Bahmed
 Author URI: http://islamaudio.fr
 */
@@ -269,10 +269,10 @@ jQuery('.aya1').trigger('submit');
 	.suraName {border-bottom: 1px solid #<?php echo get_option('background_quran_title'); ?>;text-align: center; font-size: 20px; padding: 10px 0px; background-color: #<?php echo get_option('background_quran_title'); ?>; margin-top: 7px;color:#<?php echo get_option('text_quran_title'); ?>;}
 	.aya {margin:auto;background-color: #fff; border: 1px solid #fff; border-top: 0px;}
 	.aya2 {padding-top:5px;margin-left:20px;background-color: #fff; color:grey;height:40px;font-size:22px;}
-	.aya1 {width:700px;margin:auto;margin-top:20px;}	
+	.aya1 {width:auto;margin:auto;margin-top:20px;}	
 	.quran { font-family: Traditional Arabic;color:#<?php echo get_option('text_quran_arabic'); ?>;border-right: 1px solid #<?php echo get_option('background_quran_arabic'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_arabic'); ?>; font-size: 28px; direction: rtl;background-color:#<?php  echo get_option('background_quran_arabic');?>}
 	.trans { font-family: Calibri;text-align:justify;border-right: 1px solid #<?php echo get_option('background_quran_trans'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_trans'); ?>;border-bottom: 1px solid #<?php echo get_option('background_quran_trans');?>;border-top: 1px solid #<?php echo get_option('background_quran_trans'); ?>; color:#<?php echo get_option('text_quran_trans'); ?>;font-size: 20px; direction: ltr; background-color: #<?php echo get_option('background_quran_trans'); ?>;}
-	.tabSura{margin-top:20px;position:relative;width:100%;}
+	.tabSura{margin-top:20px;position:relative;width:auto;}
 	.ayaNum{color:#<?php echo get_option('verse_quran_number'); ?>;}
 	.quran, .trans {padding: 10px; text-align: right;}
 	.sign {font-family: times new roman; font-size: 0.9em; color: #FB7600;}

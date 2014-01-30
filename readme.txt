@@ -58,3 +58,6 @@ vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting d
 
 = 1.1.4 =
 add audio for all the verses with multi recitator
+
+= 1.1.5 =
+fix css quran aya
