@@ -270,13 +270,11 @@ jQuery('.aya1').trigger('submit');
 	.aya {margin:auto;background-color: #fff; border: 1px solid #fff; border-top: 0px;}
 	.aya2 {padding-top:5px;margin-left:20px;background-color: #fff; color:grey;height:40px;width:80%;font-size:22px;}
 	.aya1 {width:auto;margin:auto;margin-top:20px;}	
-	.quran { font-family: Traditional Arabic;color:#<?php echo get_option('text_quran_arabic'); ?>;border-right: 1px solid #<?php echo get_option('background_quran_arabic'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_arabic'); ?>; font-size: 28px; direction: rtl;background-color:#<?php  echo get_option('background_quran_arabic');?>}
-	.trans { font-family: Calibri;text-align:justify;border-right: 1px solid #<?php echo get_option('background_quran_trans'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_trans'); ?>;border-bottom: 1px solid #<?php echo get_option('background_quran_trans');?>;border-top: 1px solid #<?php echo get_option('background_quran_trans'); ?>; color:#<?php echo get_option('text_quran_trans'); ?>;font-size: 20px; direction: ltr; background-color: #<?php echo get_option('background_quran_trans'); ?>;}
+	.quran { padding: 10px;font-family: Traditional Arabic;color:#<?php echo get_option('text_quran_arabic'); ?>;border-right: 1px solid #<?php echo get_option('background_quran_arabic'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_arabic'); ?>; font-size: 28px; direction: rtl;background-color:#<?php  echo get_option('background_quran_arabic');?>}
+	.trans { font-family: Calibri;text-align:justify;border-right: 1px solid #<?php echo get_option('background_quran_trans'); ?>;border-left: 1px solid #<?php echo get_option('background_quran_trans'); ?>;border-bottom: 1px solid #<?php echo get_option('background_quran_trans');?>;border-top: 1px solid #<?php echo get_option('background_quran_trans'); ?>; color:#<?php echo get_option('text_quran_trans'); ?>;font-size: 16px; background-color: #<?php echo get_option('background_quran_trans'); ?>;}
 	.tabSura{margin-top:20px;position:relative;width:auto;}
 	.ayaNum{color:#<?php echo get_option('verse_quran_number'); ?>;}
-	.quran, .trans {padding: 10px; text-align: right;}
 	.sign {font-family: times new roman; font-size: 0.9em; color: #FB7600;}
-	.footer {text-align: center; margin: 20px 0px; color: #222; font-family: Arial;
 	background-color: #f4f4ff; border: 1px solid #ccd; padding: 3px; font: 12px Verdana;}
 	.upCoran{position:fixed;margin-left:990px;margin-top:20px;}
 	.chooseSura{font-weight:bold;color:grey;margin-left:25px;font-size:20px;padding-top:7px;}
