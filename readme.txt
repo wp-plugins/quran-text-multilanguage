@@ -10,8 +10,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Quran Text Plugin full translated into French, English, German and Russian .
-islam catégory
+Quran Text Multilanguage translated into French, English, German and Russian.You can change the background color and text color.audio of each verse is added, you can choose the reciter in the administration of the plugin.To listen to audio, just click the number of the verse.
+
+
+audio of each verse is added, you can choose the reciter in the administration of the plugin.
+To listen to audio, just click the number of the verse.
+l'audio de chaque verset est rajouté , vous pouvez choisir le récitateur dans l'administration du plugin.
+Pour écouter un audio, il vous suffit de cliquer sur le numero du verset.
+
 You can change the background color and text color in your administration setting.
 
 You just have to write the shortcode [quran] on your new page.
@@ -30,8 +36,8 @@ vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting d
 == Screenshots ==
 
 1. setting quran plugin http://img15.hostingpics.net/pics/951923setting.png
-2. setting admin http://img15.hostingpics.net/pics/710361quranadmin.png
-3. exemple page quran http://img4.hostingpics.net/pics/715760demoquran.png
+2. setting admin http://img15.hostingpics.net/pics/973651admin.png
+3. exemple page quran http://img15.hostingpics.net/pics/203003demo.png
 
 == Changelog ==
 
@@ -51,4 +57,4 @@ vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting d
 * add defaut options (languages, color)
 
 = 1.1.4 =
-add audio for all verse with multi recitator
+add audio for all the verses with multi recitator
