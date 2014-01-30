@@ -206,7 +206,7 @@ register_uninstall_hook(__FILE__, 'quran_uninstall');
 
 //SCRIPTS DU PLUGIN
 function quran_scripts(){
-    wp_register_script('quran_admin_color',plugin_dir_url( __FILE__ ).'js/jscolor/jscolor.js');	
+    wp_register_script('quran_admin_color',plugin_dir_url( __FILE__ ).'admin/js/jscolor/jscolor.js');	
 	wp_register_script('quran_soundmanager',plugin_dir_url( __FILE__ ).'js/soundmanager.js');	
     wp_register_script('quran_player',plugin_dir_url( __FILE__ ).'js/player.js');		
     wp_register_style('quran_player_css',plugin_dir_url( __FILE__ ).'css/player.css');			
