@@ -223,14 +223,10 @@ function rendu_quran(){
 
 if(isset($_GET['sourate'])){
 
-$urlSura = $_GET['sourate'];
-
-$sura = explode('_', $urlSura);
-$name_sura = $sura[0];
-$sura = $sura[1];
-$urlSelect = $sura[0];
-$_SESSION['sourate'] = $sura;
-$_SESSION['name_sura'] = $name_sura;
+	$urlSura = $_GET['sourate'];
+	$sura = explode('_', $urlSura);
+	$name_sura = $sura[0];
+	$sura = $sura[1];
 
 }
 else {$sura = 1;}
@@ -295,7 +291,7 @@ jQuery('.aya1').trigger('submit');
 	{
 $sourate->nom = ltrim($sourate->nom, "0");
 		echo '<option value="'.$sourate->url.'_'.$sourate->nom_id.'"';
-	if($_SESSION['sourate'] == $sourate->nom_id){ echo ' selected="selected">';}	
+	if($sura == $sourate->nom_id){ echo ' selected="selected">';}	
 	else{
 	
 	echo '>';}	
