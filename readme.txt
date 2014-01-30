@@ -26,7 +26,7 @@ Vous devez juste écrire le shortcode [quran] sur votre nouvelle page.
 you can set the theme colors of the Quran by going to setting in the administration.
 vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting dans l'administration.
 
-
+demo page : http://gp-codex.fr/quran-demo/
 == Installation ==
 
 1. Upload quran-text to the `/wp-content/plugins/` directory
