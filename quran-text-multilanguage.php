@@ -1,13 +1,13 @@
 <?php
 /*
-Plugin Name: Quran Text Multilanguage
+Plugin Name: Quran Multilanguage Text Audio Verse
 Description: Quran Text Multilanguage translated into French, English, German and Russian.You can change the background color and text color.audio of each verse is added, you can choose the reciter in the administration of the plugin.To listen to audio, just click the number of the verse.
 Version: 1.1.4
 Author: Karim Bahmed
 Author URI: http://islamaudio.fr
 */
 function quran_menu(){
-     add_options_page('Quran Text Multilanguage', 'Quran Text Multilanguage', 'manage_options', 'quran-menu', 'quran_options');
+     add_options_page('Quran  Multilanguage', 'Quran  Multilanguage', 'manage_options', 'quran-menu', 'quran_options');
 	//call register settings function
 	add_action( 'admin_init', 'register_options' );
 	 }
