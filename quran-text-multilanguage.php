@@ -383,7 +383,7 @@ showSura($sura);
 ?>
 <script type="text/javascript">
 jQuery('span.ayaNum, .sm2_link').replaceWith(function(){
-var sura = '<?php echo $_SESSION['sourate'] ?>';
+var sura = '<?php echo $sura; ?>';
 return "<a class='sm2_link' href='http://www.islamaudio.fr/verset/<?=get_option('quran_recitator');?>/" +sura+ "/"+jQuery(this).html().match(/[0-9]+/)+".mp3'><span class='quranbadge quranbadge-info'>  "+jQuery(this).html().match(/[0-9]+/)+" </span></a>";
 });
 
