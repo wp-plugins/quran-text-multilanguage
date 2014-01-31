@@ -64,3 +64,6 @@ fix css quran aya
 
 = 1.2 =
 Add full sura audio
+
+= 1.2.1 =
+Fix jquery
