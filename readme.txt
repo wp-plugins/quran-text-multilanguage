@@ -61,3 +61,6 @@ add audio for all the verses with multi recitator
 
 = 1.1.5 =
 fix css quran aya
+
+= 1.2 =
+Add full sura audio
