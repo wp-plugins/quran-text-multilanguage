@@ -2,7 +2,7 @@
 /*
 Plugin Name: Quran Multilanguage Text Audio Verse
 Description: Quran Text Multilanguage translated into French, English, German and Russian.You can change the background color and text color.audio of each verse is added, you can choose the reciter in the administration of the plugin.To listen to audio, just click the number of the verse.
-Version: 1.2.1
+Version: 1.2
 Author: Karim Bahmed
 Author URI: http://islamaudio.fr
 */
@@ -306,7 +306,8 @@ $sourate->nom = ltrim($sourate->nom, "0");
 <a href="#" class="btn" id="btnBismilah">Bismilah&nbsp;</a>
 </form>
 
-	<div class="quran_audio">
+
+	<div style="margin-top:10px;text-align:center;">
 		<audio controls><source src="http://www.islamaudio.fr/recitateur/<?=$recitator;?>/<?=$nbr;?>.mp3" type="audio/mp3">Your browser does not support this audio format.</audio>
 	</div>
 <?php
@@ -384,15 +385,17 @@ echo "<div class='tabSura'>";
 showSura($sura);
 ?>
 <script type="text/javascript">
+jQuery(document).ready(function(){
 jQuery('span.ayaNum, .sm2_link').replaceWith(function(){
 var sura = '<?php echo $sura; ?>';
 return "<a class='sm2_link' href='http://www.islamaudio.fr/verset/<?=get_option('quran_recitator');?>/" +sura+ "/"+jQuery(this).html().match(/[0-9]+/)+".mp3'><span class='quranbadge quranbadge-info'>  "+jQuery(this).html().match(/[0-9]+/)+" </span></a>";
 });
+});
 
 </script>
+<img style="position:absolute;width:71px;height:55px;top:0px;right:1%;" src="<?=plugins_url( '/images/fleche.png' , __FILE__ );?>">
 <?php
 echo "
-<img id='fleche' src='".plugins_url( '/images/fleche.png' , __FILE__ )."'>
 </div></div>";
 		
 }
