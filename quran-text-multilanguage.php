@@ -166,7 +166,7 @@ dbDelta( $sql );
 //DEFAUT OPTIONS COLORS
 add_option( 'quran_languages', 'english', '', 'yes' );
 add_option( 'text_quran_title', '000000', '', 'yes' );
-add_option( 'background_quran_title', 'FFFFFF', '', 'yes' );
+add_option( 'background_quran_title', 'english', '', 'yes' );
 add_option( 'verse_quran_number', 'english', '', 'yes' );
 add_option( 'text_quran_trans', '000000', '', 'yes' );
 add_option( 'background_quran_trans', 'FFFFFF', '', 'yes' );
@@ -295,12 +295,19 @@ $sourate->nom = ltrim($sourate->nom, "0");
 	echo '>';}	
 		echo ''.ucwords(strtolower($sourate->nom)).'</option>';
 	}
-	
-?>
+
+	if(get_option('quran_recitator') == "Maher_al_me-aqly"){$recitator = "Maheralmeaqly";$nbr = sprintf( "%03d", $sura );}
+	if(get_option('quran_recitator') == "ElGhamidi"){$recitator = "ElGhamidi";$nbr = $sura ;}
+	if(get_option('quran_recitator') == "Soudais"){$recitator = "Soudais";$nbr = sprintf( "%03d", $sura );}
+	?>
 </select>
 <input type="hidden" class="aya3" name="numero" value="<?php echo $sourate->nom_id;?>" >
 <a href="#" class="btn" id="btnBismilah">Bismilah&nbsp;</a>
 </form>
+
+	<div class="quran_audio">
+		<audio controls><source src="http://www.islamaudio.fr/recitateur/<?=$recitator;?>/<?=$nbr;?>.mp3" type="audio/mp3">Your browser does not support this audio format.</audio>
+	</div>
 <?php
 
 	function initSuraData()
@@ -383,7 +390,9 @@ return "<a class='sm2_link' href='http://www.islamaudio.fr/verset/<?=get_option(
 
 </script>
 <?php
-echo "</div></div>";
+echo "
+<img id='fleche' src='".plugins_url( '/images/fleche.png' , __FILE__ )."'>
+</div></div>";
 		
 }
 add_shortcode('quran', 'quran_shortcode');

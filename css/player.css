@@ -5,3 +5,5 @@
 .quranbadge-success:hover{background-color:#356635;}
 .quranbadge-important{background-color:#b94a48;}
 .quranbadge-important:hover{background-color:#953b39;}
+.quran_audio{margin-top:10px;text-align:center;}
+#fleche{position:absolute;width:71px;height:55px;top:0px;right:1%;}
