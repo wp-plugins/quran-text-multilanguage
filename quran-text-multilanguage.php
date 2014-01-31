@@ -166,7 +166,7 @@ dbDelta( $sql );
 //DEFAUT OPTIONS COLORS
 add_option( 'quran_languages', 'english', '', 'yes' );
 add_option( 'text_quran_title', '000000', '', 'yes' );
-add_option( 'background_quran_title', 'english', '', 'yes' );
+add_option( 'background_quran_title', 'FFFFFF', '', 'yes' );
 add_option( 'verse_quran_number', 'english', '', 'yes' );
 add_option( 'text_quran_trans', '000000', '', 'yes' );
 add_option( 'background_quran_trans', 'FFFFFF', '', 'yes' );
