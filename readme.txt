@@ -26,6 +26,7 @@ Vous devez juste écrire le shortcode [quran] sur votre nouvelle page.
 you can set the theme colors of the Quran by going to setting in the administration.
 vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting dans l'administration.
 
+- ce plugin peut être associé à (this plugin can be associated with) widget <a href="http://wordpress.org/plugins/holy-quran-random-verse-multilanguage/">Holy Quran random verse Multilanguage</a>
 
 == Installation ==
 
@@ -67,3 +68,6 @@ Add full sura audio
 
 = 1.2.1 =
 Fix jquery
+
+= 1.2.2 =
+* ce plugin peut être associé au (this plugin can be associated with) Holy Quran random verse Multilanguage
