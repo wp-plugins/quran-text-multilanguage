@@ -30,6 +30,8 @@ vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting d
 
 - <a target ="_blank" href="http://gp-codex.fr">demo page</a>
 
+- if you want more languages contact me.
+
 == Installation ==
 
 1. Upload quran-text to the `/wp-content/plugins/` directory
