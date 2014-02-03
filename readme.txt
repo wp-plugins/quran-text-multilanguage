@@ -28,7 +28,7 @@ vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting d
 
 - ce plugin peut être associé à (this plugin can be associated with) widget <a href="http://wordpress.org/plugins/holy-quran-random-verse-multilanguage/">Holy Quran random verse Multilanguage</a>
 
-- <a href="http://gp-codex.fr">demo page</a>
+- <a target ="_blank" href="http://gp-codex.fr">demo page</a>
 
 == Installation ==
 
