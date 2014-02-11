@@ -390,7 +390,6 @@ return "<a class='sm2_link' href='http://www.islamaudio.fr/verset/<?=get_option(
 });
 
 </script>
-<img style="position:absolute;width:71px;height:55px;top:0px;right:1%;" src="<?=plugins_url( '/images/fleche.png' , __FILE__ );?>">
 <?php
 echo "
 </div></div>";
