@@ -10,27 +10,42 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Quran Text Multilanguage translated into French, English, German and Russian.You can change the background color and text color.audio of each verse is added, you can choose the reciter in the administration of the plugin.To listen to audio, just click the number of the verse.
-
-
-audio of each verse is added, you can choose the reciter in the administration of the plugin.
+Quran Text Multilanguage translated into French, English, German and Russian.
+You can change the background color and text color.
+Audio of each verse is added, you can choose the reciter in the administration of the plugin.
 To listen to audio, just click the number of the verse.
-l'audio de chaque verset est rajouté , vous pouvez choisir le récitateur dans l'administration du plugin.
-Pour écouter un audio, il vous suffit de cliquer sur le numero du verset.
-
-You can change the background color and text color in your administration setting.
 
 You just have to write the shortcode [quran] on your new page.
-Vous devez juste écrire le shortcode [quran] sur votre nouvelle page.
 
-you can set the theme colors of the Quran by going to setting in the administration.
-vous pouvez paramétrer les couleurs du thème du Coran en allant dans setting dans l'administration.
-
-- ce plugin peut être associé à (this plugin can be associated with) widget <a href="http://wordpress.org/plugins/holy-quran-random-verse-multilanguage/">Holy Quran random verse Multilanguage</a>
+- this plugin can be associated with widget <a href="http://wordpress.org/plugins/holy-quran-random-verse-multilanguage/">Holy Quran random verse Multilanguage</a>
 
 - <a target ="_blank" href="http://gp-codex.fr">demo page</a>
 
-- if you want more languages contact me.
+Languages :
+
+- arabe
+- english
+- français
+- allemand
+- russe
+- albanian
+- azerbaijani
+- bengali
+- bulgarian
+- chinese
+- czech
+- indonesian
+- italian
+- kurdish
+- malay
+- norwegian
+- portuguese
+- romanian
+- somali
+- spanish
+- swedish
+- turkish
+
 
 == Installation ==
 
@@ -75,3 +90,24 @@ Fix jquery
 
 = 1.2.2 =
 * ce plugin peut être associé au (this plugin can be associated with) Holy Quran random verse Multilanguage
+
+= 1.2.3 =
+Add more languages
+
+- albanian
+- azerbaijani
+- bengali
+- bulgarian
+- chinese
+- czech
+- indonesian
+- italian
+- kurdish
+- malay
+- norwegian
+- portuguese
+- romanian
+- somali
+- spanish
+- swedish
+- turkish
