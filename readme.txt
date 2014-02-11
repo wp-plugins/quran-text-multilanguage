@@ -1,6 +1,6 @@
 ﻿=== Quran Text and Audio Plugin  ===
 Contributors: Karim Bahmed
-Donate link: http://www.islamaudio.fr/donate
+Donate link: http://www.gp-codex.fr/donate
 Tags: quran, coran , coran en texte, quran text, quran translate, islam, muslim, audio verse, quran verse, coran verset, audio verset
 Requires at least: 3.0.1
 Tested up to: 3.8.1
@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Quran Text Multilanguage translated into French, English, German and Russian.
+Quran Text Multilanguage translated into 22 languages.
 You can change the background color and text color.
 Audio of each verse is added, you can choose the reciter in the administration of the plugin.
 To listen to audio, just click the number of the verse.
@@ -89,7 +89,7 @@ Add full sura audio
 Fix jquery
 
 = 1.2.2 =
-* ce plugin peut être associé au (this plugin can be associated with) Holy Quran random verse Multilanguage
+* this plugin can be associated with Holy Quran random verse Multilanguage
 
 = 1.2.3 =
 Add more languages
