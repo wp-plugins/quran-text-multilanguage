@@ -265,8 +265,6 @@ jQuery('.aya1').trigger('submit');
 </script>
 
 <style>
-	#btnBismilah{background:#<?php echo get_option('background_quran_trans'); ?>;color:#<?php  echo get_option('text_quran_trans'); ?>;width:auto;height:37px;font-size:17px;}
-	#btnBismilah:hover{background:#fff;color:#4EA8D4;}	
 	.suraName {border-bottom: 1px solid #<?php echo get_option('background_quran_title'); ?>;text-align: center; font-size: 20px; padding: 10px 0px; background-color: #<?php echo get_option('background_quran_title'); ?>; margin-top: 7px;color:#<?php echo get_option('text_quran_title'); ?>;}
 	.aya {margin:auto;background-color: #fff; border: 1px solid #fff; border-top: 0px;}
 	.aya2 {padding-top:5px;margin-left:20px;background-color: #fff; color:grey;height:40px;width:80%;font-size:22px;}
@@ -283,7 +281,7 @@ jQuery('.aya1').trigger('submit');
 	</style>
 <form  class="aya1" method="get">
 
-<select name="sourate" id="sourate" class="aya2">
+<select name="sourate" id="sourate" class="aya2" onchange='submit()'>
 
 <?php
 	foreach ( $req_sourate as $sourate ) 
@@ -303,7 +301,6 @@ $sourate->nom = ltrim($sourate->nom, "0");
 	?>
 </select>
 <input type="hidden" class="aya3" name="numero" value="<?php echo $sourate->nom_id;?>" >
-<a href="#" class="btn" id="btnBismilah">Bismilah&nbsp;</a>
 </form>
 
 
