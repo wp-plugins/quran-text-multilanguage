@@ -89,7 +89,7 @@ Add full sura audio
 Fix jquery
 
 = 1.2.2 =
-* ce plugin peut être associé au (this plugin can be associated with) Holy Quran random verse Multilanguage
+* this plugin can be associated with Holy Quran random verse Multilanguage
 
 = 1.2.3 =
 Add more languages
