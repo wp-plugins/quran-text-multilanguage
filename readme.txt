@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Quran Text Multilanguage translated into French, English, German and Russian.
+Quran Text Multilanguage translated into 22 languages.
 You can change the background color and text color.
 Audio of each verse is added, you can choose the reciter in the administration of the plugin.
 To listen to audio, just click the number of the verse.
