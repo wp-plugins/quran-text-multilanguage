@@ -1,6 +1,6 @@
 ﻿=== Quran Text and Audio Plugin  ===
 Contributors: Karim Bahmed
-Donate link: http://www.islamaudio.fr/donate
+Donate link: http://www.gp-codex.fr/donate
 Tags: quran, coran , coran en texte, quran text, quran translate, islam, muslim, audio verse, quran verse, coran verset, audio verset
 Requires at least: 3.0.1
 Tested up to: 3.8.1
