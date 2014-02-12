@@ -56,7 +56,7 @@ Languages :
 == Screenshots ==
 
 1. setting quran plugin http://img15.hostingpics.net/pics/951923setting.png
-2. setting admin http://img15.hostingpics.net/pics/973651admin.png
+2. setting admin http://img15.hostingpics.net/pics/472581screenshot2.png
 3. exemple page quran http://img15.hostingpics.net/pics/203003demo.png
 
 == Changelog ==
