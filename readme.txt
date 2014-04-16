@@ -3,7 +3,7 @@ Contributors: Karim Bahmed
 Donate link: http://www.gp-codex.fr
 Tags: quran, coran , coran en texte, quran text, quran translate, islam, muslim, audio verse, quran verse, coran verset, audio verset
 Requires at least: 3.0.1
-Tested up to: 3.8.1
+Tested up to: 3.9
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
