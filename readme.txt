@@ -111,3 +111,7 @@ Add more languages
 - spanish
 - swedish
 - turkish
+
+= 1.2.4 =
+
+Correction bug with default url and permalink
