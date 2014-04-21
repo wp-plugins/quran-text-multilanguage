@@ -2,7 +2,7 @@
 /*
 Plugin Name: Quran Multilanguage Text Audio Verse
 Description: Quran Text Multilanguage translated into 22 languages.You can change the background color and text color.audio of each verse is added, you can choose the reciter in the administration of the plugin.To listen to audio, just click the number of the verse.
-Version: 1.2.3
+Version: 1.2.4
 Author: Karim Bahmed
 Author URI: http://gp-codex.fr
 */
@@ -239,28 +239,32 @@ else {$sura = 1;}
 	ORDER BY nom_id
 	"
 );
+$myurl = get_permalink( $post->ID );
+
+$findme   = '?';
+$pos = strpos($myurl, $findme);
+if ($pos !== false) {
+$separateur = '&';
+} else {
+$separateur = '?';
+}
 ?>
 
 <div id="quran_main">
 <script>
 jQuery(function(){
 
-jQuery(".aya1").on('submit',
-  function(d){
+   jQuery(function(){
 
-d.preventDefault();
-	var sourate = 'sourate='+jQuery("#sourate").val();
- var host = window.location.href.replace(/(&?sourate=.+[^&])/, '');
-	var q = (host.indexOf('?') != -1) ? '&' : '?';
-	var href = host + q + sourate;
+      jQuery('#change_sura').bind('change', function () {
+          var url = $(this).val(); 
+          if (url) { 
+              window.location = url;
+          }
+          return false;
+      });
+    });
 
-   window.location.replace(href);
-
-  }
- );
-jQuery('#btnBismilah').click(function(){
-jQuery('.aya1').trigger('submit');
- });
 });
 </script>
 
@@ -279,15 +283,15 @@ jQuery('.aya1').trigger('submit');
 	.chooseSura{font-weight:bold;color:grey;margin-left:25px;font-size:20px;padding-top:7px;}
 	#quran_main{float:left;width:auto}
 	</style>
-<form  class="aya1" method="get">
+<form  class="aya1">
 
-<select name="sourate" id="sourate" class="aya2" onchange='submit()'>
+<select name="sourate" id="change_sura" class="aya2" '>
 
 <?php
 	foreach ( $req_sourate as $sourate ) 
 	{
 $sourate->nom = ltrim($sourate->nom, "0");
-		echo '<option value="'.$sourate->url.'_'.$sourate->nom_id.'"';
+		echo '<option value="'.$myurl.''.$separateur.'sourate='.$sourate->url.'_'.$sourate->nom_id.'"';
 	if($sura == $sourate->nom_id){ echo ' selected="selected">';}	
 	else{
 	
@@ -300,7 +304,6 @@ $sourate->nom = ltrim($sourate->nom, "0");
 	if(get_option('quran_recitator') == "Soudais"){$recitator = "Soudais";$nbr = sprintf( "%03d", $sura );}
 	?>
 </select>
-<input type="hidden" class="aya3" name="numero" value="<?php echo $sourate->nom_id;?>" >
 </form>
 
 
