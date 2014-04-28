@@ -257,7 +257,7 @@ jQuery(function(){
    jQuery(function(){
 
       jQuery('#change_sura').bind('change', function () {
-          var url = $(this).val(); 
+          var url = jQuery(this).val(); 
           if (url) { 
               window.location = url;
           }
