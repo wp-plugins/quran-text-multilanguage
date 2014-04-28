@@ -115,3 +115,7 @@ Add more languages
 = 1.2.4 =
 
 Correction bug with default url and permalink
+
+= 1.2.5 =
+
+Fix error with jquery
