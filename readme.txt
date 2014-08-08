@@ -119,3 +119,7 @@ Correction bug with default url and permalink
 = 1.2.5 =
 
 Fix error with jquery
+
+= 1.2.6 =
+
+Fix error with last version php
