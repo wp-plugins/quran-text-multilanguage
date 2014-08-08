@@ -2,7 +2,7 @@
 /*
 Plugin Name: Quran Multilanguage Text Audio Verse
 Description: Quran Text Multilanguage translated into 22 languages.You can change the background color and text color.audio of each verse is added, you can choose the reciter in the administration of the plugin.To listen to audio, just click the number of the verse.
-Version: 1.2.5
+Version: 1.2.6
 Author: Karim Bahmed
 Author URI: http://gp-codex.fr
 */
@@ -308,7 +308,7 @@ $sourate->nom = ltrim($sourate->nom, "0");
 
 
 	<div style="margin-top:10px;text-align:center;">
-		<audio controls><source src="http://www.islamaudio.fr/recitateur/<?=$recitator;?>/<?=$nbr;?>.mp3" type="audio/mp3">Your browser does not support this audio format.</audio>
+		<audio controls><source src="http://www.islamaudio.fr/recitateur/<?php echo $recitator;?>/<?php echo $nbr;?>.mp3" type="audio/mp3">Your browser does not support this audio format.</audio>
 	</div>
 <?php
 
@@ -388,7 +388,7 @@ showSura($sura);
 jQuery(document).ready(function(){
 jQuery('span.ayaNum, .sm2_link').replaceWith(function(){
 var sura = '<?php echo $sura; ?>';
-return "<a class='sm2_link' href='http://www.islamaudio.fr/verset/<?=get_option('quran_recitator');?>/" +sura+ "/"+jQuery(this).html().match(/[0-9]+/)+".mp3'><span class='quranbadge quranbadge-info'>  "+jQuery(this).html().match(/[0-9]+/)+" </span></a>";
+return "<a class='sm2_link' href='http://www.islamaudio.fr/verset/<?php echo get_option('quran_recitator');?>/" +sura+ "/"+jQuery(this).html().match(/[0-9]+/)+".mp3'><span class='quranbadge quranbadge-info'>  "+jQuery(this).html().match(/[0-9]+/)+" </span></a>";
 });
 });
 
