@@ -29,7 +29,7 @@ Abdallah Ali Basfar <input type="radio" name="quran_recitator" value="Alafasy" <
 
 <tr valign="top">
 
-<th scope="row">language</th>
+<th scope="row">language default</th>
 
 <td>
 			<select name="quran_languages">
@@ -42,6 +42,7 @@ Abdallah Ali Basfar <input type="radio" name="quran_recitator" value="Alafasy" <
 			<option value="azerbaijani"<?php if (get_option('quran_languages') == "azerbaijani"){echo 'selected="selected"';}?>>Azerbaijani</option>
 			<option value="bengali"<?php if (get_option('quran_languages') == "bengali"){echo 'selected="selected"';}?>>Bengali</option>			
 			<option value="bulgarian"<?php if (get_option('quran_languages') == "bulgarian"){echo 'selected="selected"';}?>>Bulgarian</option>	
+			<option value="bosnian"<?php if (get_option('quran_languages') == "bosnian"){echo 'selected="selected"';}?>>Bosnian</option>		
 			<option value="chinese"<?php if (get_option('quran_languages') == "chinese"){echo 'selected="selected"';}?>>Chinese</option>
 			<option value="czech"<?php if (get_option('quran_languages') == "czech"){echo 'selected="selected"';}?>>Czech</option>
 			<option value="indonesian"<?php if (get_option('quran_languages') == "indonesian"){echo 'selected="selected"';}?>>Indonesian</option>
@@ -69,7 +70,8 @@ Background : <input name="background_quran_title" class="color" value="<?php ech
 
 <tr valign="top">
 <th scope="row">Color number</th>
-<td>Num :<input name="verse_quran_number" class="color" value="<?php echo get_option('verse_quran_number'); ?>" />
+<td>Num :<input name="color_quran_number" class="color" value="<?php echo get_option('color_quran_number'); ?>" />
+Background : <input name="background_quran_number" class="color" value="<?php echo get_option('background_quran_number'); ?>" />
 </td>
 </tr>
 
@@ -90,7 +92,8 @@ Background : <input name="background_quran_arabic" class="color" value="<?php ec
 
 
 </table>
-
+<a href="http://gp-codex.fr" target="_blank"> <img src="http://gp-codex.fr/wp-content/themes/sugar-and-spice/images/donpp.jpg" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !" border="0" type="image"></a>
+<span style="margin-top:20px;position:absolute">make a donation to pay for the server</span>	
 <?php submit_button(); ?>
 
 </form>

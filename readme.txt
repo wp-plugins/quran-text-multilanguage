@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Quran Text Multilanguage translated into 22 languages.
+Quran Text Multilanguage translated into 23 languages.
 You can change the background color and text color.
 Audio of each verse is added, you can choose the reciter in the administration of the plugin.
 To listen to audio, just click the number of the verse.
@@ -31,6 +31,7 @@ Languages :
 - albanian
 - azerbaijani
 - bengali
+- bosnian
 - bulgarian
 - chinese
 - czech
@@ -120,6 +121,11 @@ Correction bug with default url and permalink
 
 Fix error with jquery
 
-= 1.2.6 =
+1.2.6
 
 Fix error with last version php
+
+1.2.7
+
+visitors can choose the language.
+Fix background and color the number of the verse
