@@ -55,7 +55,7 @@ Abdallah Ali Basfar <input type="radio" name="quran_recitator" value="Alafasy" <
 			<option value="somali"<?php if (get_option('quran_languages') == "somali"){echo 'selected="selected"';}?>>Somali</option>
 			<option value="spanish"<?php if (get_option('quran_languages') == "spanish"){echo 'selected="selected"';}?>>Spanish</option>	
 			<option value="swedish"<?php if (get_option('quran_languages') == "swedish"){echo 'selected="selected"';}?>>Swedish</option>	
-			<option value="turkish"<?php if (get_option('quran_languages') == "turkish"){echo 'selected="selected"';}?>>Turkish</option>				
+			<option value="turkish"<?php if (get_option('quran_languages') == "turkish"){echo 'selected="selected"';}?>>Turkish</option>			<option value="urdu"<?php if (get_option('quran_languages') == "urdu"){echo 'selected="selected"';}?>>Urdu</option>	<option value="hindi"<?php if (get_option('quran_languages') == "hindi"){echo 'selected="selected"';}?>>Hindi</option>					
 			</select>
 </td>
 
