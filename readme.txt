@@ -46,7 +46,8 @@ Languages :
 - spanish
 - swedish
 - turkish
-
+- urdu
+- hindi
 
 == Installation ==
 
@@ -129,3 +130,7 @@ Fix error with last version php
 
 visitors can choose the language.
 Fix background and color the number of the verse
+
+1.2.8
+
+Add urdu & hindi language

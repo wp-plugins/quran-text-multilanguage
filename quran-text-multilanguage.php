@@ -2,7 +2,7 @@
 /*
 Plugin Name: Quran Multilanguage Text Audio Verse
 Description: Quran Text Multilanguage translated into 22 languages.You can change the background color and text color.audio of each verse is added, you can choose the reciter in the administration of the plugin.To listen to audio, just click the number of the verse.
-Version: 1.2.7
+Version: 1.2.8
 Author: Karim Bahmed
 Author URI: http://gp-codex.fr
 */
@@ -321,7 +321,6 @@ $sourate->nom = ltrim($sourate->nom, "0");
 
 ?>
 
-
 </select>
 </form>
 		<form method="post" id="select_language">
@@ -348,7 +347,8 @@ $sourate->nom = ltrim($sourate->nom, "0");
 			<option value="somali" <?php if($_SESSION['select_language'] == 'somali'):echo 'selected="selected"';endif;?>>Somali</option>
 			<option value="spanish" <?php if($_SESSION['select_language'] == 'spanish'):echo 'selected="selected"';endif;?>>Spanish</option>	
 			<option value="swedish" <?php if($_SESSION['select_language'] == 'swedish'):echo 'selected="selected"';endif;?>>Swedish</option>	
-			<option value="turkish" <?php if($_SESSION['select_language'] == 'turkish'):echo 'selected="selected"';endif;?>>Turkish</option>		
+			<option value="turkish" <?php if($_SESSION['select_language'] == 'turkish'):echo 'selected="selected"';endif;?>>Turkish</option>	
+			<option value="urdu" <?php if($_SESSION['select_language'] == 'urdu'):echo 'selected="selected"';endif;?>>Urdu</option>	<option value="hindi" <?php if($_SESSION['select_language'] == 'hindi'):echo 'selected="selected"';endif;?>>Hindi</option>			
 		</select>
 		</form>
 	<div id="audio_sura">
