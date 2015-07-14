@@ -3,14 +3,14 @@ Contributors: Karim Bahmed
 Donate link: http://www.gp-codex.fr
 Tags: quran, coran , coran en texte, quran text, quran translate, islam, muslim, audio verse, quran verse, coran verset, audio verset
 Requires at least: 3.0.1
-Tested up to: 3.9
+Tested up to: 4.2.2
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Quran Text Multilanguage translated into 25 languages.
+Quran Text Multilanguage translated into 26 languages.
 You can change the background color and text color.
 Audio of each verse is added, you can choose the reciter in the administration of the plugin.
 To listen to audio, just click the number of the verse.
@@ -27,6 +27,7 @@ Languages :
 - english
 - français
 - allemand
+- dutch
 - russe
 - albanian
 - azerbaijani
@@ -52,8 +53,8 @@ Languages :
 == Installation ==
 
 1. Upload quran-text to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. use shortcode [quran] on your new page
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. use shortcode [quran] on your new page
 
 == Screenshots ==
 
@@ -134,3 +135,7 @@ Fix background and color the number of the verse
 1.2.8
 
 Add urdu & hindi language
+
+1.2.9
+
+Add dutch language

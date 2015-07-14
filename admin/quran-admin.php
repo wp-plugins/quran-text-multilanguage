@@ -37,6 +37,7 @@ Abdallah Ali Basfar <input type="radio" name="quran_recitator" value="Alafasy" <
 			<option value="english"<?php if (get_option('quran_languages') == "english"){echo 'selected="selected"';}?>>English</option>			
 			<option value="francais"<?php if (get_option('quran_languages') == "francais"){echo 'selected="selected"';}?>>Français</option>
 			<option value="german"<?php if (get_option('quran_languages') == "german"){echo 'selected="selected"';}?>>German</option>
+			<option value="dutch"<?php if (get_option('quran_languages') == "dutch"){echo 'selected="selected"';}?>>Dutch</option>
 			<option value="russian"<?php if (get_option('quran_languages') == "russian"){echo 'selected="selected"';}?>>Russian</option>	
 			<option value="albanian"<?php if (get_option('quran_languages') == "albanian"){echo 'selected="selected"';}?>>Albanian</option>
 			<option value="azerbaijani"<?php if (get_option('quran_languages') == "azerbaijani"){echo 'selected="selected"';}?>>Azerbaijani</option>
@@ -102,5 +103,5 @@ Background : <input name="background_quran_arabic" class="color" value="<?php ec
 <input type="image" class="paypal" src="http://islamaudio.fr/template/images/paypal.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
 </form>
 </div>
-<span style="position:absolute;color:green">make a donation to pay for the server</span>	
+<span style="position:absolute;color:green">the server expires on 01/08/2015 thank you for your help</span>	
 </div> 

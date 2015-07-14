@@ -329,6 +329,7 @@ $sourate->nom = ltrim($sourate->nom, "0");
 			<option value="english" <?php if($_SESSION['select_language'] == 'english'):echo 'selected="selected"';endif;?>>English</option>			
 			<option value="francais" <?php if($_SESSION['select_language'] == 'francais'):echo 'selected="selected"';endif;?>>Français</option>
 			<option value="german" <?php if($_SESSION['select_language'] == 'german'):echo 'selected="selected"';endif;?>>German</option>
+			<option value="dutch" <?php if($_SESSION['select_language'] == 'dutch'):echo 'selected="selected"';endif;?>>Dutch</option>
 			<option value="russian" <?php if($_SESSION['select_language'] == 'russian'):echo 'selected="selected"';endif;?>>Russian</option>	
 			<option value="albanian" <?php if($_SESSION['select_language'] == 'albanian'):echo 'selected="selected"';endif;?>>Albanian</option>
 			<option value="azerbaijani" <?php if($_SESSION['select_language'] == 'azerbaijani'):echo 'selected="selected"';endif;?>>Azerbaijani</option>
